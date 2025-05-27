@@ -1,0 +1,15 @@
+.item-navbar-container{
+    margin-left: 7rem;
+    margin-right: 7rem;
+    max-height: 4.8rem;
+} 
+.navbar-container{
+    border-bottom: 0.1rem solid;
+    border-color: #02adb9;
+    max-height: 4.8rem;
+}
+.menu-center{
+    font-size: 1.25rem;
+    font-weight: 500;
+    color: #00244a;
+}
