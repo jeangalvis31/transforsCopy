@@ -10,6 +10,7 @@ import { Component } from '@angular/core';
 export class LogoComponent {
 
   imagePath = 'img/transforLogo.png';
+  imagePath2 = 'img/isotipo.png';
   alt: string = 'Logo';
 
 }

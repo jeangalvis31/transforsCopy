@@ -1,1 +1,6 @@
-<app-navbar></app-navbar>
+<section class="header">
+    <app-navbar (menuToggle)="menuVisible = $event" ></app-navbar>
+    <div class="menu-routes">
+        <app-menu-links [isActive]="menuVisible"></app-menu-links>
+    </div>
+</section>

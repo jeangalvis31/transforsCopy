@@ -1,8 +1,31 @@
 .container-session{
     width: 15.6rem;
+    cursor: pointer;
 }
 .text-container{
     color: #00244a;
     font-weight: 500;
     font-size: 1.125rem;
 }
+
+.arrow-down svg {
+  transition: transform 0.3s ease;
+}
+
+.arrow-down.rotate svg {
+  transform: rotate(180deg);
+}
+
+.dropdown-session {
+    width: 15.6rem;
+    font-size: 1.125rem;
+    font-weight: 600;
+  color: #00244a;
+  background-color: #02adb9;
+  border: 1px solid #02adb9;
+  border-radius: 0.3rem;
+  margin-top: 3rem;
+  padding: 1rem;
+  transition: all 0.3s ease;
+}
+
