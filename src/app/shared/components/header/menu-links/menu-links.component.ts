@@ -1,5 +1,6 @@
 import { CommonModule, NgClass } from '@angular/common';
 import { Component, input, signal } from '@angular/core';
+import { menuLinks } from '../../../../components/interfaces/menu.interface';
 
 @Component({
   selector: 'app-menu-links',
@@ -8,12 +9,6 @@ import { Component, input, signal } from '@angular/core';
   styleUrl: './menu-links.component.css'
 })
 export class MenuLinksComponent {
-routesMenu: string[]= [
-  "Inicio",
-  "Normatividad",
-  "Selección impuesto",
-  "Contacto"
-];
-
   isActive = input.required<boolean>();
+  routesMenuSignal = input.required<menuLinks[]>();
 }

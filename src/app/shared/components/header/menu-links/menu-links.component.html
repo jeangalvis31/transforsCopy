@@ -1,9 +1,12 @@
 <div class="container-menu" [ngClass]="isActive() ? 'active' : ''">
-    @for (routeMenu of routesMenu; track $index) {
+    @for (routeMenu of routesMenuSignal(); track $index) {
     <div class="button-container">
         <a>
-            <h6 class="mb-0">{{routeMenu}}</h6>
+            <h6 class="mb-0">{{routeMenu.name}}</h6>
         </a>
+        <div class="subMenu">
+            
+        </div>
     </div>
     }
 </div>

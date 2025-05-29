@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavbarComponent } from "./navbar/navbar.component";
 import { MenuLinksComponent } from "./menu-links/menu-links.component";
+import { menuLinks } from '../../../components/interfaces/menu.interface';
 
 
 @Component({
@@ -10,5 +11,23 @@ import { MenuLinksComponent } from "./menu-links/menu-links.component";
   styleUrl: './header.component.css'
 })
 export class HeaderComponent {
-menuVisible: boolean = false;
+
+
+  routesMenu: menuLinks[] = [
+    {
+      name: 'Inicio',
+      dir: 'portal'
+    }, {
+      name: 'Normatividad',
+      dir: 'avisos'
+    }, {
+      name: 'Selección impuesto',
+      dir: ''
+    }, {
+      name: 'Contacto',
+      dir: 'contactenos'
+    }
+  ];
+
+  menuVisible: boolean = false;
 }

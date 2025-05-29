@@ -1,0 +1,47 @@
+.container-multicolor{
+    background: linear-gradient(#fff 40%,#02adb91a 40% 100%);
+}
+.test{
+    width: 12.25rem;
+}
+.card-menu {
+    width: 100%;
+  padding-inline:0.613rem;
+  text-align: center;
+}
+
+.card-menu > img {
+  width: 7rem;
+  margin: 0 auto;
+  transition: transform 0.5s ease;
+}
+.card-menu:hover img {
+  transform: scale(1.2);
+}
+
+.card-menu .card-title {
+  color: #6e7275;
+}
+
+.card-menu .card-title > h4 {
+  margin-top: 1.125rem;
+  margin-bottom: 0.625rem;
+  font-size: 1.125rem;
+}
+
+.card-grid {
+  max-width: 70rem;
+  padding-left: 1rem;
+  padding-right: 1rem;
+}
+
+.container {
+  max-width: 100%;
+}
+
+@media (max-width: 768px){
+    .container-multicolor{
+        padding-top: 2rem;
+        background: #02adb91a;
+    };
+}
