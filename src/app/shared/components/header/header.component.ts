@@ -16,16 +16,55 @@ export class HeaderComponent {
   routesMenu: menuLinks[] = [
     {
       name: 'Inicio',
-      dir: 'portal'
+      dir: 'portal',
+      submenu: []
     }, {
       name: 'Normatividad',
-      dir: 'avisos'
+      dir: 'avisos',
+      submenu: []
     }, {
       name: 'Selección impuesto',
-      dir: ''
+      dir: '',
+      submenu: [{
+        name: 'Predial',
+        url: ''
+      }, {
+        name: 'Industria y comercio',
+        url: ''
+      }, {
+        name: 'Deguello',
+        url: ''
+      }, {
+        name: 'Espectáculos Públicos',
+        url: ''
+      }, {
+        name: 'Delineación Urbano',
+        url: ''
+      },
+    {
+        name: 'Sobretasa Gasolina',
+        url: ''
+      },
+    {
+        name: 'Multas y Sanciones',
+        url: ''
+      },
+    {
+        name: 'Publicidad Exterior',
+        url: ''
+      },
+    {
+        name: 'Declaración de Estampillas',
+        url: ''
+      },
+    {
+        name: 'Multas de Transito',
+        url: ''
+      },]
     }, {
       name: 'Contacto',
-      dir: 'contactenos'
+      dir: 'contactenos',
+      submenu: []
     }
   ];
 

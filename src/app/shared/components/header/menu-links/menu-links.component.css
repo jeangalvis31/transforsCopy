@@ -19,6 +19,29 @@
     background-color: #02adb91a
 }
 
+
+.subMenu {
+  display: none;
+  flex-direction: column;
+  padding-left: 1rem;
+  margin-top: 0.5rem;
+}
+
+.button-container:hover .subMenu {
+  display: flex;
+}
+
+.subMenu a h6 {
+  font-size: 0.95rem;
+  color: #555;
+  padding: 0.25rem 0;
+}
+
+/* Opcional: subrayado o separación */
+.subMenu a h6:hover {
+  text-decoration: underline;
+}
+
 @media(max-width: 768px){
 
 
@@ -36,4 +59,13 @@
         border-bottom: 0.1rem solid #dbe2e2;
         text-align: center;
     }
+      .subMenu {
+    display: flex;
+    padding-left: 0;
+    align-items: center;
+  }
+
+  .button-container:hover .subMenu {
+    display: flex;
+  }
 }
