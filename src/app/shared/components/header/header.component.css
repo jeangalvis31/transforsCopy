@@ -2,3 +2,16 @@
     margin-top: 5.2rem;
     width: 100%;
 }
+
+
+@media (max-width: 767.98px) {
+  app-menu-links {
+    position: fixed;
+    top: 4.8rem; /* Ajusta esto a la altura de tu navbar */
+    left: 0;
+    right: 0;
+    z-index: 1030; /* Mayor que el navbar si es necesario */
+    background-color: white; /* Asegura que se vea encima */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+}

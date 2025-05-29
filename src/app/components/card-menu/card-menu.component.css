@@ -31,3 +31,15 @@
 .container {
   max-width: 100%;
 }
+
+@media (max-width: 768px) {
+.card-menu > img {
+  width: 10.25rem;
+}
+}
+
+@media (max-width: 992px){
+.card-menu > img {
+  width: 6.25rem;
+}
+}
